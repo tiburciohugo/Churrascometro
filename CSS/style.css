@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+  height: 500px; 
+  line-height: 1.5; 
+}
+
+.container {
+  display: flex;  
+  height: 400px;
+  width: 90%; 
+  margin: auto;
+}
+
+.fieldset {
+  margin: auto;
+  padding: 3px;
+  background-color: lightblue;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.form {      
+  height: 50%;
+  width: 30%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px #888888;  
+}
+
+.fieldset h2 {
+  color: #333;
+  margin: 5px auto;
+}
+
+.insert {
+  text-align: center;
+  width: 90%;
+  margin: 5px auto;
+  padding: 5px;
+  border: 2px lightgrey solid;
+  border-radius: 5px;
+}
+
+.insert:onfocus {
+  border-color: lightblue;
+}
+
+.calc {
+  margin: 10px auto;
+  padding: 5px;
+  width: 20%;
+}
+
+.animated-img {   
+  height: 50%;
+  width: 50%;
+}
+
+#button {
+  color: #333;
+  width: 30%;
+  padding: 5px;
+  border: 2px lightgrey solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+#button:hover {
+  background-color: #407BFF;
+  color: #fafafa;
+  opacity: 0.8;
+  transform: scale(1.1em);
+  transition: 0.3 ease-in-out;
+}
+
+footer {
+  display: flex;
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+footer p {
+  color: #fafafa;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+
+#footer-git {
+  color: #fafafa;  
+  margin: auto;
+  
+}
+
+footer a {
+  color: #fafafa;
+  margin-right: 30%;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 1.5rem;        
+  }
+
+  .container {
+    display: block;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+  }
+
+  .animated-img {
+    width: 100%;
+  }
+
+  .form {
+    height: auto;
+    width: 100%;    
+    margin: 32% auto;
+  }
+
+  .insert {
+    font-size: 0.8em;
+  }
+
+  #button {
+    width: 90%;
+    font-size: 0.8em;
+  }
+
+  footer {
+    height: 30px;
+  }
+
+  footer p {
+    margin: auto;    
+    padding: 0 0 15px 0;
+  }
+
+  #footer-git {
+    display: flex;
+    margin: auto;
+  }
+
+  footer a {
+    display: none;
+  }
+}

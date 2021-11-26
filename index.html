@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Churrascômetro</title>
+</head>
+<body>
+  <section class="container">
+    <div class="animated-img">
+      <img id="animated-img" src="./assets/barbecue-animate.svg" alt="bbq-gif">
+    </div>
+    <div class="form">      
+      
+      <div class="fieldset">
+        <h2>Churrascômetro</h2>
+        <input type="number" class="insert" id="adultos" placeholder="Quantidade de Adultos">
+      <input type="number" class="insert" id="criancas" placeholder="Quantidade de Crianças">
+      <input type="number" class="insert" id="duracao" placeholder="Duração do Churrasco (Horas)">
+      <button id="button" type="button" class="calc" onclick="calc()">Calcular</button>
+
+      <div id="result"></div> 
+      </div>  
+         
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>Hugo Tiburcio</p>
+    <a id="footer-git" href="http://github.com/tiburciohugo" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://storyset.com/people">People illustrations by Storyset</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
